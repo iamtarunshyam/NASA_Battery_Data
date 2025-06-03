@@ -1,7 +1,7 @@
 
 # 🔋 Randomized Battery Usage – SOH Analysis using NASA Dataset
 
-This repository presents a structured ETL-based analysis pipeline for **State of Health (SOH)** estimation of Li-ion batteries using the **NASA PCoE Randomized Battery Dataset**. It explores data extraction, transformation, feature analysis, and visual diagnostics aimed at improving predictive maintenance through battery health tracking.
+This repository presents a structured analysis pipeline for **State of Health (SOH)** estimation of Li-ion batteries using the **NASA PCoE Randomized Battery Dataset**. It explores data extraction, transformation, feature analysis, and visual diagnostics aimed at improving predictive maintenance through battery health tracking.
 
 ---
 
