@@ -13,6 +13,16 @@ This project uses the NASA PCoE “Randomized Battery Usage” dataset.
 - Data columns include: voltage, current, temperature, relative time, and operation type (C, D, R).
 - Files are grouped by temperature and load profiles.
 
+### Features:
+| Feature         | Description                           |
+|----------------|---------------------------------------|
+| `voltage`       | Measured terminal voltage             |
+| `current`       | Load/discharge current                |
+| `temperature`   | Internal battery temperature          |
+| `relative_time` | Timestamps for sampled measurements   |
+| `cycle`         | Discharge cycle index (derived)       |
+| `subgroup`      | Subgrouping for analysis (A/B packs)  |
+
 > ⚠️ Note: The dataset is **not uploaded to Git** due to its large size. You must manually place the original `.mat` files in `DataSet/1) Raw/`.
 
 ### Folder Layout
@@ -107,7 +117,7 @@ plt.axhline(80, linestyle='--', label="End-of-life threshold")
 
 #### Example Result
 
-![SOH Curve](assets/example_soh_plot.png)
+![SOH Curve](/Users/tarunshyam/Learning/NASA_Battery_data/Randomized Battery Usage/Data_Pipeline/5_Reporting/SOH/SOH.png)
 
 The chart shows degradation curves for different battery configurations, where SOH falls below 80%—indicating end of useful life.
 
@@ -122,13 +132,26 @@ The chart shows degradation curves for different battery configurations, where S
 
 ---
 
-## 👨‍🔬 Author & Acknowledgements
-
-**Author**: Tarun Shyam  
-**Institution**: Brandenburg Technical University – MSc in Artificial Intelligence 
-
 ## Requirements
 
 - Python 3.8+
 - pandas, numpy, scipy, matplotlib, seaborn
 - scikit-learn
+
+## 👨‍🔬 Author & Acknowledgements
+
+**Author**: Tarun Shyam  
+**Institution**: Brandenburg Technical University – MSc in Artificial Intelligence 
+
+## Concepts Covered
+
+- SOH & battery degradation estimation
+- Trapezoidal numerical integration
+- Feature scaling and normalization
+- Visual EDA and hypothesis formulation
+
+## License
+
+This project is for academic and educational use. Please cite the original NASA dataset if using this work in publications.
+
+
