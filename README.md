@@ -12,6 +12,7 @@ This project uses the NASA PCoE “Randomized Battery Usage” dataset.
 - Each `.mat` file represents a single battery tested under varied charge/discharge conditions.
 - Data columns include: voltage, current, temperature, relative time, and operation type (C, D, R).
 - Files are grouped by temperature and load profiles.
+- Link - <https://phm-datasets.s3.amazonaws.com/NASA/11.+Randomized+Battery+Usage+Data+Set.zip>
 
 ### Features:
 | Feature         | Description                           |
@@ -23,7 +24,7 @@ This project uses the NASA PCoE “Randomized Battery Usage” dataset.
 | `cycle`         | Discharge cycle index (derived)       |
 | `subgroup`      | Subgrouping for analysis (A/B packs)  |
 
-> ⚠️ Note: The dataset is **not uploaded to Git** due to its large size. You must manually place the original `.mat` files in `DataSet/1) Raw/`.
+> Note: The dataset is **not uploaded to Git** due to its large size. You must manually place the original `.mat` files in `DataSet/1) Raw/`.
 
 ### Folder Layout
 
@@ -138,7 +139,7 @@ The chart shows degradation curves for different battery configurations, where S
 - pandas, numpy, scipy, matplotlib, seaborn
 - scikit-learn
 
-## 👨‍🔬 Author & Acknowledgements
+## Author & Acknowledgements
 
 **Author**: Tarun Shyam  
 **Institution**: Brandenburg Technical University – MSc in Artificial Intelligence 
